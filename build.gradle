@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.0.1' 
+    bomVersion = '1.0.1'
 }
 
 group = 'com.company'
@@ -14,10 +14,10 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-    mavenCentral() 
+    mavenCentral()
     maven {
         url 'https://nexus.jmix.io/repository/public'
-    } 
+    }
 }
 
 dependencies {
@@ -34,7 +34,7 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    runtimeOnly 'org.hsqldb:hsqldb'
+    runtimeOnly 'org.postgresql:postgresql'
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
